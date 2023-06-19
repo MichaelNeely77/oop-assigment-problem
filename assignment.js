@@ -6,7 +6,7 @@ class Course {
     }
 
     calcValue() {
-        return this.length/this.price;
+        return this.length / this.price;
     }
 
     printSummary() {
@@ -14,8 +14,16 @@ class Course {
     }
 }
 
-const firstCourse = new Course('introduction', '30 mins', '29.99');
-const secondCourse = new Course('The Second Course', '45 mins', '39.99');
+const firstCourse = new Course('introduction', 30, 29.99);
+const secondCourse = new Course('The Second Course', 45, 39.99);
 
 console.log(firstCourse);
 console.log(secondCourse);
+
+console.log(firstCourse.calcValue());
+console.log(secondCourse.calcValue());
+
+firstCourse.printSummary();
+secondCourse.printSummary();
+
+
