@@ -44,5 +44,14 @@ console.log(angularCourse);
 angularCourse.printSummary();
 
 class TheoreticalCourse extends Course {
-
+    publish = () => console.log('Somethkng');
 }
+
+const pythonCourse = new TheoreticalCourse(
+    'Python Course',
+    45,
+    23.99
+);
+
+pythonCourse.printSummary();
+pythonCourse.publish();
