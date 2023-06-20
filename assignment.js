@@ -26,4 +26,23 @@ console.log(secondCourse.calcValue());
 firstCourse.printSummary();
 secondCourse.printSummary();
 
+class PracticalCourse extends Course {
+    constructor(title, length, price, exerciseCount) {
+       super(title, length, price);
+       this.numOfExercises = exerciseCount;
+    }
+}
 
+const angularCourse = new PracticalCourse(
+    'The Angular Course',
+    36,
+    39.99,
+    150
+);
+
+console.log(angularCourse);
+angularCourse.printSummary();
+
+class TheoreticalCourse extends Course {
+
+}
